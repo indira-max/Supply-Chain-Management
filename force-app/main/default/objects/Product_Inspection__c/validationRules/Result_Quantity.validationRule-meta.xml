@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Result_Quantity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Result__c , &quot;Pass&quot;) , PO_Line_Item__r.Quantity_Ordered__c =0)</errorConditionFormula>
+    <errorMessage>If quanity is 0 in PO_LINE_ITEM Then result cannot be pass</errorMessage>
+</ValidationRule>

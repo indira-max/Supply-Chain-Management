@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( PRIORVALUE(Status__c) , &quot;Closed&quot;) ,
+ OR(
+     ISPICKVAL(Status__c,&quot;Ordered&quot;) ,
+     ISPICKVAL(Status__c,&quot;Approved&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot move a closed Purchase Order back to an earlier status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reorder_Level_must_be_less_than_current</fullName>
+    <active>true</active>
+    <errorConditionFormula>Reorder_Level__c  &lt;  Quantity_Available__c</errorConditionFormula>
+    <errorMessage>Reorder level must be less than available quantity</errorMessage>
+</ValidationRule>

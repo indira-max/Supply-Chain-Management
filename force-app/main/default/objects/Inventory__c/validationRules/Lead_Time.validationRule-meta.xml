@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Time</fullName>
+    <active>true</active>
+    <errorConditionFormula>Lead_Time__c &lt; 0</errorConditionFormula>
+    <errorMessage>Lead Time cannot be negative</errorMessage>
+</ValidationRule>

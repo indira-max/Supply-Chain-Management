@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Active__c = True, ISBLANK( WareHouse__c ) )</errorConditionFormula>
+    <errorMessage>You must assign a warehouse before marking the inventory as Active.</errorMessage>
+</ValidationRule>

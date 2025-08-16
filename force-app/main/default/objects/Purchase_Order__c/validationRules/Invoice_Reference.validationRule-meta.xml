@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Reference</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   ISBLANK( Invoice_Reference__c ),
+    ISPICKVAL(Status__c, &quot;Approved&quot;)
+)</errorConditionFormula>
+    <errorMessage>Invoice reference should be  entered after PO is approved.</errorMessage>
+</ValidationRule>

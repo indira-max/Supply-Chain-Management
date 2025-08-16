@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_NCR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Resolution_Status__c , &quot;Closed&quot;),
+  ISBLANK( Root_Cause_Analysis__c )  )</errorConditionFormula>
+    <errorMessage>Please complete Root Cause Analysis before closing the NCR</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_is_Closed_or_Resolved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR(
+         ISPICKVAL(Resolution_Status__c , &quot;Closed&quot;),                       
+         ISPICKVAL(Resolution_Status__c , &quot;Resolved&quot;)
+   ),
+ ISBLANK( Target_Resolution_Date__c ) )</errorConditionFormula>
+    <errorMessage>Resolved or Closed NCRs must have a Target Resolution Date.</errorMessage>
+</ValidationRule>

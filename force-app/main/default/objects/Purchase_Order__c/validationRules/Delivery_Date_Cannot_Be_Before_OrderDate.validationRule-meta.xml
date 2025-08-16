@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Date_Cannot_Be_Before_OrderDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISBLANK( Delivery_Date__c ) ) ,
+NOT( ISBLANK(  Order_Date__c  ) ),
+ Delivery_Date__c  &lt;  Order_Date__c )</errorConditionFormula>
+    <errorMessage>Delivery_Date__c should not be less than Order_Date__c</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Purchase_Order__c</members>
+         <members>	Inventory__c</members>
+         <members>Supplier__c</members>
+         <members>	WareHouse__c</members>
+          <members>	Product_Inspection__c</members>
+            <members>	Non_Conformance_Report__c</members>
+        <name>CustomObject</name>
+    </types>
+   
+    <version>64.0</version>
+</Package>

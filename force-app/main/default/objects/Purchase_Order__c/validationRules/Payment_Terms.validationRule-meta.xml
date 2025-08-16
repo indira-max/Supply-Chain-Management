@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  TEXT(CurrencyIsoCode)  &lt;&gt; &quot;USD&quot;,
+         ISBLANK(   TEXT( Payment_Terms__c )))</errorConditionFormula>
+    <errorMessage>Payment Terms are required for international purchase orders</errorMessage>
+</ValidationRule>

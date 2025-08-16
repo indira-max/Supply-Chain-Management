@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Severity_Low_or_High</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+        Escalated__c ,
+
+        OR( ISPICKVAL( Severity__c , &quot;Low&quot;),
+            ISPICKVAL( Severity__c , &quot;High&quot;)
+         ) ,
+       NOT( ISPICKVAL( Resolution_Status__c , &quot;In Progess&quot;) )        
+ 
+      )</errorConditionFormula>
+    <errorMessage>Medium and Low severity issues can only be escalated when they are In Progress.</errorMessage>
+</ValidationRule>

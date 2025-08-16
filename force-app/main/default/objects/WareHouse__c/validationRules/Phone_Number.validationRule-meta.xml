@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  NOT( ISBLANK(  Contact_Person__c ) ) ,  ISBLANK( Phone__c ) )</errorConditionFormula>
+    <errorMessage>Please enter a phone number if a contact person is specified</errorMessage>
+</ValidationRule>

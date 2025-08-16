@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Status_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISCHANGED( Resolution_Status__c) ,
+      ISPICKVAL( PRIORVALUE(Resolution_Status__c),&quot;Closed&quot;),            NOT(ISPICKVAL(Resolution_Status__c, &quot;Closed&quot;))
+
+       
+)</errorConditionFormula>
+    <errorMessage>You cannot move a Closed NCR back to a previous status.</errorMessage>
+</ValidationRule>

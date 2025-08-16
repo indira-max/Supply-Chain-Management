@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>InStock</fullName>
+                <default>false</default>
+                <label>InStock</label>
+            </value>
+            <value>
+                <fullName>OutofStock</fullName>
+                <default>false</default>
+                <label>OutofStock</label>
+            </value>
+            <value>
+                <fullName>LowStock</fullName>
+                <default>false</default>
+                <label>LowStock</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

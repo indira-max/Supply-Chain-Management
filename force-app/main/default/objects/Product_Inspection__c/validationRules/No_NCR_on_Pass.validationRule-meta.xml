@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_NCR_on_Pass</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL( Result__c , &quot;Pass&quot;) , 
+Non_Conformance_Report__c , 
+NOT( ISBLANK( Linked_NCR__c ) ))</errorConditionFormula>
+    <errorMessage>NCR should be unchecked if Result is Pass</errorMessage>
+</ValidationRule>
