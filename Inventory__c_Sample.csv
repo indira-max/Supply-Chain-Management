@@ -1,0 +1,6 @@
+Item_Name__c,Item_Code__c,Quantity_Available__c,Reorder_Level__c,Minimum_Order_Quantity__c,Unit_of_Measure__c,Unit_Price__c,Warehouse__c,Supplier__c,Last_Reorder_Date__c,Lead_Time__c,Active__c
+Surgical Gloves,INV-{0001},500,100,50,Box,25.0,Warehouse A,MedSupply Co.,2025-06-01,7,True
+Face Masks,INV-{0002},1200,300,100,Box,15.0,Warehouse B,HealthCare Supplies Ltd.,2025-07-10,5,True
+Thermometers,INV-{0003},150,50,20,Each,8.5,Warehouse A,MediCare Inc.,2025-05-20,10,True
+IV Fluids,INV-{0004},300,100,50,Box,60.0,Warehouse C,Global Pharma,2025-06-15,14,True
+Syringes,INV-{0005},2000,500,200,Box,5.0,Warehouse B,SafeMed Supplies,2025-08-01,6,True
