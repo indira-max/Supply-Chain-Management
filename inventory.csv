@@ -1,0 +1,9 @@
+Inventory Item Name,Quantity Available,Reorder Level,Minimum Order Quantity,Unit Price,Last Reorder Date,Lead Time,Active,Status
+Laptop Dell XPS,50,10,5,1200,2025-07-15,7,TRUE,InStock
+Mouse Logitech M720,200,50,20,25,2025-08-01,5,TRUE,InStock
+Office Chair Ergonomic,30,5,2,180,,2025-06-20,14,TRUE,InStock
+Printer HP LaserJet,15,3,1,350,2025-07-05,10,TRUE,InStock
+Paper A4 Bundle,500,100,50,5,2025-08-10,3,TRUE,InStock
+Monitor Samsung 27",40,8,2,220,2025-06-28,12,TRUE,InStock
+Keyboard Mechanical MX,80,15,5,75,2025-07-22,6,TRUE,InStock
+Desk Standing Adjustable,10,2,1,450,2025-05-30,20,FALSE,InStock
